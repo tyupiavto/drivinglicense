@@ -1,0 +1,195 @@
+﻿body {
+}
+
+.image-container {
+    width: 750px;
+    height: 518px;
+    margin-top: 20px;
+    height: 520px;
+}
+
+.exam-wrap {
+    height: 662px;
+    position: relative;
+    background: #535353;
+}
+
+body .container {
+    position: relative;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 150px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.ticket-container {
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    padding: 5px;
+    cursor: default;
+    display: table;
+    table-layout: fixed;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.ticket-container-small {
+    width: 750px;
+    height: 512px;
+}
+
+.icon-open { /*ganmarteba gilakis giad chveneba*/
+    top: 3px;
+}
+
+.icon-close { /*ganmarteba gilakis daxurulad chveneba*/
+    color: #666;
+    display: none;
+    top: 5px;
+}
+
+.answers { /*calkeuli gilaki*/
+    position: relative;
+    width: 750px;
+    height: 125px;
+    background-color: #042f4f;
+    border: 0px solid #ffffff;
+    z-index: 20;
+    bottom: 0;
+}
+
+.test-answer {
+    float: left;
+    width: 50%;
+    height: 50%;
+    margin: 0;
+    border: 1px solid #ffffff;
+}
+
+.test-answer-inner { /*calkeuli gilaki shigtavsi*/
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    cursor: default;
+    display: table;
+    table-layout: fixed;
+    transition: all 0.2s;
+}
+
+.test-number { /*nomeris dawera*/
+    width: 8%;
+    color: #042f4f;
+    font-family: Arial,"Helvetica Neue",Helvetica,Sylfaen,sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 26px;
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 1;
+    transition: all 0.2s;
+}
+
+.test-answer-inner .test-number span { /*nomrebis daweros spani*/
+    display: inline-block;
+    background: #fff;
+    width: 35px;
+    padding: 5px 0;
+    border-radius: 5px;
+}
+
+.test-text { /*texstis dawera*/
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 10px;
+    font-size: 12px;
+    width: 100%;
+    color: #fff;
+    line-height: 1;
+}
+
+.definition-button { /*ganmarteba*/
+    position: absolute;
+    text-align: center;
+    display: none;
+    font-weight: 400;
+    width: 45px;
+    height: 35px;
+    margin-left: 700px;
+    top: 10px;
+    box-shadow: 1px 1px 2px #555;
+    border: 5px;
+    background-color: #fff;
+    color: black;
+    z-index: 40;
+    font-size: 23px;
+    border-radius: 5px;
+}
+
+.definition-box {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: -5px;
+    bottom: 5px;
+    background: rgba(0,0,0,0.7);
+    z-index: 29;
+    -moz-box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    display: none;
+    font-size: 15px;
+}
+
+.definition-box-inner {
+    display: none;
+    background: #fff;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    right: 40px;
+    padding: 20px 20px 10px;
+    color: #595959;
+    max-height: 550px;
+    overflow-y: auto;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    -webkit-user-select: text;
+    user-select: text;
+}
+
+.answers p:hover {
+    background-color: #3046bf;
+    border: 2px solid #000000;
+}
+
+.sc-top {
+    position: fixed;
+    width: 56px;
+    display: none;
+    height: 56px;
+    background-color: rgba(0,0,0,.5);
+    background-position: center;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    bottom: 100px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    right: 30px;
+    cursor: pointer;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    transition: text-shadow 1s ease;
+}

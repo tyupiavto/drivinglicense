@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DrivingLicenseData">
+  <DataContextMoniker Name="/DrivingLicenseDataDataContext" />
+  <nestedChildShapes>
+    <classShape Id="fd34c901-df72-43b0-803e-e0b200d9d04d" absoluteBounds="3.625, 1.75, 2, 2.9247054036458331">
+      <DataClassMoniker Name="/DrivingLicenseDataDataContext/DrivingLicenseData" />
+      <nestedChildShapes>
+        <elementListCompartment Id="be2bb79c-948d-4c86-bbc5-2b5460592d1a" absoluteBounds="3.64, 2.21, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

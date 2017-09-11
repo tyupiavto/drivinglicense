@@ -1,0 +1,23 @@
+﻿function startPage() {
+
+    $('.start-page-wrap').hide();
+    $('.image-container').css('display', 'block');
+    var QuestionsTopicsArray = [];
+    $('.inputNext').each(function (item) {
+        if ($(this).prop('checked') == true) {
+            QuestionsTopicsArray[item] = item + 1;
+        }
+    });
+    $.ajax({
+        url: '/Exam/QuestionsTopics',
+        type: 'POST',
+        data: { 'ResultTopics': QuestionsTopicsArray },
+        success: function () {
+            $('.inputNext').each(function (item) {
+                if ($(this).prop('checked') == true) {
+                    QuestionsTopicsArray[item] = item + 1;
+                }
+            });
+        }
+    });
+}

@@ -1,0 +1,668 @@
+﻿@{
+    ViewBag.Title = "გამოცდა";
+}
+
+<!DOCTYPE html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+<link href="~/Content/bootstrap.css" rel="stylesheet" />
+<link href="~/Content/MyContent/carusel.css" rel="stylesheet" />
+<link href="~/Content/MyContent/checkedOnOff.css" rel="stylesheet" />
+<link href="~/Content/MyContent/correctError.css" rel="stylesheet" />
+<link href="~/Content/MyContent/homePage.css" rel="stylesheet" />
+<link href="~/Content/MyContent/informationColumn.css" rel="stylesheet" />
+<link href="~/Content/MyContent/questionsAnswers.css" rel="stylesheet" />
+<link href="~/Content/MyContent/startPage.css" rel="stylesheet" />
+<link href="~/Content/MyContent/timerResult.css" rel="stylesheet" />
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Exam</title>
+</head>
+<body>
+    <div class="exam-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="start-page start-page-wrap">
+                    <div class="start-page-object category">
+                        <h3 class="l-label">
+                            მართვის მოწმობის კატეგორია:
+                        </h3>
+                        <div class="exam-category-selector">
+                            <div class="exam-category-list">
+                                <div class="exam-category-selector active">
+                                    <span class="label-wrap">B,B1:მსუბუქი ავტომობილი, კვადროციკლი</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="start-page-object topics">
+                        <h3 class="l-label">
+                            <span class="enable-shutdown-topics">
+                                ყველას ჩართვა/გამორთვა
+                            </span>
+                            კითხვები თემები:
+                        </h3>
+                        <div class="exam-topics-selector all-themes">
+                            <div class="autoNext" id="autoNext-1">
+                                <input type="checkbox" class="autoNext-1 inputNext" name="check" checked style="display:none" />
+                                <label for="autoNext" id="autonext" class="autoNext-1"></label>
+                                <label title="მძღოლი, მგზავრი და ქვეითი,ნიშნები" class="exam-topic" data-id="1" id="checked-1" style="top:-8px;">
+                                    &nbsp; 1.მძღოლი, მგზავრი და ქვეითი,ნიშნები,კონვეცია
+                                </label>
+                                </div>
+                            <div class="autoNext" id="autoNext-2">
+                                <input type="checkbox" class="autoNext-2 inputNext" name="check" checked style="display:none" />
+                                <label for="autoNext" id="autonext"class="autoNext-2" data-id="2"></label>
+                                <label title="უწესივრობა და მართვის პირობები" class="exam-topic" id="cheked-2"style="top:-8px">
+                                    &nbsp; 2.უწესივრობა და მართვის პირობები
+                                </label>
+                                </div>
+                            <div class="autoNext" id="autoNext-3">
+                                <input type="checkbox" class="autoNext-3 inputNext" name="check" checked style="display:none" />
+                                <label for="autoNext" id="autonext" class="autoNext-3" data-id="3"></label>
+                                <label title="მაფრთხილებელი ნიშნები" class="exam-topic" data-id="3" style="top:-8px">
+                                    &nbsp; 3.მაფრთხილებელი ნიშნები
+                                </label>
+                                </div>
+                            <div class="autoNext" id="autoNext-4">
+                                <input type="checkbox" id="autoNext" class="autoNext-4 inputNext" name="check" checked style="display:none" />
+                                <label for="autoNext" id="autonext" class="autoNext-4"></label>
+                                <label title="პრიორიტეტის ნიშნები" class="exam-topic" data-id="4"style="top:-8px">
+                                    &nbsp; 4.პრიორიტეტის ნიშნები
+                                </label>
+                            </div>
+                            <div class="autoNext" id="autoNext-5">
+                                <input type="checkbox" class="autoNext-5 inputNext" name="check" checked style="display:none" />
+                                <label for="autoNext" id="autonext"class="autoNext-5"></label>
+                                <label title="ამკრძალავი ნიშნები" class="exam-topic" data-id="5"style="top:-8px">
+                                    &nbsp; 5.ამკრძალავი ნიშნები
+                                </label>
+                             </div>
+                            <div class="autoNext"id="autoNext-6">
+                                <input type="checkbox" class="autoNext-6 inputNext" name="check" checked style="display:none" />
+                                <label for="autoNext" id="autonext"class="autoNext-6"></label>
+                                <label title="მიმთითებელი ნიშნები" class="exam-topic" data-id="6"style="top:-8px">
+                                    &nbsp; 6.მიმთითებელი ნიშნები
+                                </label>
+                            </div>
+                            <div class="autoNext" id="autoNext-7">
+                                <input type="checkbox" class="autoNext-7 inputNext" name="check" checked style="display:none" />
+                                <label for="autoNext" id="autonext"class="autoNext-7"></label>
+                                <label title="საინფორმაციო-მაჩვენებელი ნიშნები" class="exam-topic" data-id="7"style="top:-8px">
+                                    &nbsp; 7.საინფორმაციო-მაჩვენებელი ნიშნები
+                                </label>
+                             </div>
+                            <div class="autoNext" id="autoNext-8">
+                                <input type="checkbox" class="autoNext-8 inputNext" name="check" checked style="display:none" />
+                                <label for="autoNext" id="autonext"class="autoNext-8"></label>
+                                <label title="სერვისის ნიშნები" class="exam-topic" data-id="8"style="top:-8px">
+                                    &nbsp; 8.სერვისის ნიშნები
+                                </label>
+                             </div>
+                            <div class="autoNext"id="autoNext-9">
+                                <input type="checkbox" class="autoNext-9 inputNext" name="check" checked style="display:none" />
+                                <label for="autoNext" id="autonext"class="autoNext-9"></label>
+                                <label title="დამატებითი ინფორმაციის ნიშნები" class="exam-topic" data-id="9"style="top:-8px">
+                                    &nbsp; 9.დამატებითი ინფორმაციის ნიშნები
+                                </label>
+                             </div>
+                            <div class="autoNext"id="autoNext-10">
+                                <input type="checkbox" class="autoNext-10 inputNext" name="check" checked style="display:none" />
+                                <label for="autoNext" id="autonext"class="autoNext-10"></label>
+                                <label title="შუქნიშნის სიგნალები" class="exam-topic" data-id="10"style="top:-8px">
+                                    &nbsp; 10.შუქნიშნის სიგნალები
+                                </label>
+                             </div>
+                            <div class="autoNext"id="autoNext-11">
+                                <input type="checkbox" class="autoNext-11 inputNext" name="check" checked style="display:none" />
+                                <label for="autoNext" id="autonext"class="autoNext-11"></label>
+                                <label title="მარეგულირებლის სიგნალები" class="exam-topic" data-id="11"style="top:-8px">
+                                    &nbsp; 11.მარეგულირებლის სიგნალები
+                                </label>
+                             </div>
+                               <div class="autoNext"id="autoNext-12">
+                                <input type="checkbox" class="autoNext-12 inputNext" name="check" checked style="display:none" />
+                                <label for="autoNext" id="autonext"class="autoNext-12"></label>
+                                <label title="სპეციალური სიგნალის გამოყენება" class="exam-topic" data-id="12"style="top:-8px">
+                                    &nbsp; 12.სპეციალური სიგნალის გამოყენება
+                                </label>
+                               </div>
+                             <div class="autoNext"id="autoNext-13">
+                                <input type="checkbox" class="autoNext-13 inputNext" name="check" checked style="display:none" />
+                                <label for="autoNext" id="autonext"class="autoNext-13"></label>
+                                <label title="საავარიო შუქური სიგნალიზაცია" class="exam-topic" data-id="13"style="top:-8px">
+                                    &nbsp; 13.საავარიო შუქური სიგნალიზაცია
+                                </label>
+                                 </div>
+                            <div class="autoNext"id="autoNext-14">
+                                <input type="checkbox" class="autoNext-14 inputNext" name="check" checked style="display:none" />
+                                <label for="autoNext" id="autonext"class="autoNext-14"></label>
+                                <label title="სანათი ხელსაწყოები, ხმოვანი სიგნალი" class="exam-topic" data-id="14"style="top:-8px">
+                                    &nbsp; 14.სანათი ხელსაწყოები, ხმოვანი სიგნალი
+                                </label>
+                                </div>
+                            <div class="autoNext"id="autoNext-15">
+                                <input type="checkbox" class="autoNext-15 inputNext" name="check" checked style="display:none" />
+                                <label for="autoNext" id="autonext"class="autoNext-15"></label>
+                                <label title="მოძრაობა, მანევრირება, სავალი ნაწილი" class="exam-topic" data-id="15"style="top:-8px">
+                                    &nbsp; 15.მოძრაობა, მანევრირება, სავალი ნაწილი
+                                </label>
+                                </div>
+                            <div class="autoNext right"id="autoNext-16">
+                                <input type="checkbox" class="autoNext-16 inputNext" name="check" checked style="display:none" />
+                                <label for="autoNext" id="autonext"class="autoNext-16"></label>
+                                <label title="გასწრება შემხვედრის გვერდის ავლით" class="exam-topic" data-id="16" style="top:-8px">
+                                    &nbsp; 16.გასწრება შემხვედრის გვერდის ავლით
+                                </label>
+                                </div>
+                            <div class="autoNext right"id="autoNext-17">
+                                <input type="checkbox" class="autoNext-17 inputNext" name="check" checked style="display:none" />
+                                <label for="autoNext" id="autonext"class="autoNext-17"></label>
+                                <label title="მოძრაობის სიჩქარე" class="exam-topic" data-id="17" style="top:-8px">
+                                    &nbsp; 17.მოძრაობის სიჩქარე
+                                </label>
+                            </div>
+                            <div class="autoNext right"id="autoNext-18">
+                                <input type="checkbox" class="autoNext-18 inputNext" name="check" checked style="display:none" />
+                                <label for="autoNext" id="autonext"class="autoNext-18"></label>
+                                <label title="სამუხრუჭე მანძილი, დისტანცია" class="exam-topic" data-id="18" style="top:-8px">
+                                    &nbsp; 18.სამუხრუჭე მანძილი, დისტანცია
+                                </label>
+                                </div>
+                            <div class="autoNext right"id="autoNext-19">
+                                <input type="checkbox" class="autoNext-19 inputNext" name="check" checked style="display:none" />
+                                <label for="autoNext" id="autonext"class="autoNext-19"></label>
+                                <label title="გაჩერება დგომა" class="exam-topic" data-id="19" style="top:-8px">
+                                    &nbsp; 19.გაჩერება დგომა
+                                </label>
+                                </div>
+                            <div class="autoNext right"id="autoNext-20">
+                                <input type="checkbox" class="autoNext-20 inputNext" name="check" checked style="display:none" />
+                                <label for="autoNext" id="autonext"class="autoNext-20"></label>
+                                <label title="გზაჯვარედინის გავლა" class="exam-topic" data-id="20"style="top:-8px">
+                                    &nbsp; 20.გზაჯვარედინის გავლა
+                                </label>
+                                </div>
+                            <div class="autoNext right"id="autoNext-21">
+                                <input type="checkbox" class="autoNext-21 inputNext" name="check" checked style="display:none" />
+                                <label for="autoNext" id="autonext"class="autoNext-21"></label>
+                                <label title="გზაჯვარედინის გავლა" class="exam-topic" data-id="21" style="top:-8px">
+                                    &nbsp; 21.რკინიგზის გადასასვლელი
+                                </label>
+                            </div>
+                            <div class="autoNext right"id="autoNext-22">
+                                <input type="checkbox" class="autoNext-22 inputNext" name="check" checked style="display:none" />
+                                <label for="autoNext" id="autonext"class="autoNext-22"></label>
+                                <label title="გზაჯვარედინის გავლა" class="exam-topic" data-id="22" style="top:-8px">
+                                    &nbsp; 22.მოძრაობა ავტომაგისტრალზე
+                                </label>
+                            </div>
+                            <div class="autoNext right"id="autoNext-23">
+                                <input type="checkbox" class="autoNext-23 inputNext" name="check" checked style="display:none" />
+                                <label for="autoNext" id="autonext"class="autoNext-23"></label>
+                                <label title="გზაჯვარედინის გავლა" class="exam-topic" data-id="23" style="top:-8px">
+                                    &nbsp; 23.საცხოვრებელი ზონა, სამარშრუტოს პრიორიტეტი
+                                </label>
+                            </div>
+                            <div class="autoNext right"id="autoNext-24">
+                                <input type="checkbox" class="autoNext-24 inputNext" name="check" checked style="display:none" />
+                                <label for="autoNext" id="autonext"class="autoNext-24"></label>
+                                <label title="გზაჯვარედინის გავლა" class="exam-topic" data-id="24" style="top:-8px">
+                                    &nbsp; 24.ბუქსირება
+                                </label>
+                            </div>
+                            <div class="autoNext right"id="autoNext-25">
+                                <input type="checkbox" class="autoNext-25 inputNext" name="check" checked style="display:none" />
+                                <label for="autoNext" id="autonext"class="autoNext-25"></label>
+                                <label title="გზაჯვარედინის გავლა" class="exam-topic" data-id="25" style="top:-8px">
+                                    &nbsp; 25.სასწავლო სვლა
+                                </label>
+                            </div>
+                            <div class="autoNext right"id="autoNext-26">
+                                <input type="checkbox" class="autoNext-26 inputNext" name="check" checked style="display:none" />
+                                <label for="autoNext" id="autonext"class="autoNext-26"></label>
+                                <label title="გზაჯვარედინის გავლა" class="exam-topic" data-id="26" style="top:-8px">
+                                    &nbsp; 26.გადაზიდვები, ხალხი, ტვირთი
+                                </label>
+                            </div>
+                            <div class="autoNext right"id="autoNext-27">
+                                <input type="checkbox" class="autoNext-27 inputNext" name="check" checked style="display:none" />
+                                <label for="autoNext" id="autonext"class="autoNext-27"></label>
+                                <label title="გზაჯვარედინის გავლა" class="exam-topic" data-id="27" style="top:-8px">
+                                    &nbsp; 27.ველოსიპედი, მოპედი და პირუტყვის გადარეკვა
+                                </label>
+                            </div>
+                            <div class="autoNext right"id="autoNext-28">
+                                <input type="checkbox" class="autoNext-28 inputNext" name="check" checked style="display:none" />
+                                <label for="autoNext" id="autonext"class="autoNext-28"></label>
+                                <label title="გზაჯვარედინის გავლა" class="exam-topic" data-id="28" style="top:-8px">
+                                    &nbsp; 28.საგზაო მონიშვნა
+                                </label>
+                            </div>
+                            <div class="autoNext right"id="autoNext-29">
+                                <input type="checkbox" class="autoNext-29 inputNext" name="check" checked style="display:none" />
+                                <label for="autoNext" id="autonext"class="autoNext-29"></label>
+                                <label title="გზაჯვარედინის გავლა" class="exam-topic" data-id="29" style="top:-8px">
+                                    &nbsp; 29.სამედიცინო დახმარება
+                                </label>
+                            </div>
+                            <div class="autoNext right"id="autoNext-30">
+                                <input type="checkbox" class="autoNext-30 inputNext" name="check" checked style="display:none" />
+                                <label for="autoNext" id="autonext"class="autoNext-30"></label>
+                                <label title="გზაჯვარედინის გავლა" class="exam-topic" data-id="30" style="top:-8px">
+                                    &nbsp; 30.მოძრაობის უსაფრთხოება
+                                </label>
+                            </div>
+                            <div class="autoNext right"id="autoNext-31">
+                                <input type="checkbox" class="autoNext-31 inputNext" name="check" checked style="display:none" />
+                                <label for="autoNext" id="autonext"class="autoNext-31"></label>
+                                <label title="გზაჯვარედინის გავლა" class="exam-topic" data-id="31" style="top:-8px">
+                                    &nbsp; 31.ადმინისტრაციული კანონი
+                                </label>
+                            </div>
+                                <div class="all" style="display:block;">
+                                    <p style="position:relative; top:65px; left:-8px;">
+                                        ყველა
+                                    </p>
+                                </div>
+                            </div>
+                    </div>
+                        <div class="start-page-object start-button">
+                        <div class="start-page-button">
+                            <button type="submit" id="start" style="color:cornsilk; background-color: rgba(255, 255, 255, .15);" >გამოცდის დაწყება</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-container" style="display:none">
+                <article class="ticket-container">
+                    <figure style="position: relative; z-index: 10; margin:0;">
+                        <img style="width:750px; height:412px;" id="img" />
+                    </figure>
+                    <div class="definition-button" title="განმარტება">
+                        <span class="icon-open glyphicon glyphicon-list-alt" style="display:block"></span>
+                        <span class="icon-close 	glyphicon glyphicon-list" style="display:none"></span>
+                    </div>
+                    <div class="definition-box">
+                        <div class="definition-box-inner">
+                            <p class="definition-text">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="answers">
+                        <p class="test-answer answer-1" id="1" style="height: 50%;">
+                            <span class=" test-answer-inner">
+                                <span class="test-number">
+                                    <span class="1">1</span>
+                                </span>
+                                <span class="test-text">
+                                    <span class="text-read-1" style="font-size: 13px;">
+
+                                    </span>
+                                </span>
+                            </span>
+                        </p>
+                        <p class="test-answer answer-2" id="2" style="height: 50%;">
+                            <span class="test-answer-inner">
+                                <span class="test-number">
+                                    <span class="2">2</span>
+                                </span>
+                                <span class="test-text">
+                                    <span class="text-read-2" style="font-size: 13px;">
+
+                                    </span>
+                                </span>
+                            </span>
+                        </p>
+                        <p class="test-answer answer-3" id="3" style="height: 50%;">
+                            <span class="test-answer-inner">
+                                <span class="test-number">
+                                    <span class="3">3</span>
+                                </span>
+                                <span class="test-text">
+                                    <span class="text-read-3" style="font-size: 13px;">
+
+                                    </span>
+                                </span>
+                            </span>
+                        </p>
+                        <p class="test-answer answer-4" id="4" style="height: 50%;">
+                            <span class="test-answer-inner">
+                                <span class="test-number">
+                                    <span class="4">4</span>
+                                </span>
+                                <span class="test-text">
+                                    <span class="text-read-4" style="font-size: 13px;">
+
+                                    </span>
+                                </span>
+                            </span>
+                        </p>
+                        </div>
+                </article>
+
+                <div class="test-result-ticket" style="display:none">
+                    <h3 class="test-result-message-error" style="display:block">ამ შედეგით მართვის მოწმობას ვერ აიღებდით... სცადეთ კიდევ ერთხელ, ყველაფერი გამოგივათ!</h3>
+                    <h3 class="test-result-message" style="display:block">გილოცავთ თქვენ ჩააბარეთ გამოცდა!</h3>
+                    <div class="test-result-actions">
+                        <button class="repeat-test">ახლიდან დაწყება იგივე ბილეთებით</button>
+                        <button class="next-new-test">ახალი გამოცდა სხვა ბილეთებით</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="information-column left-column">
+                        <div class="Sequence" id="correct">
+                            <img style="width:87px; height:60px; border-radius:5px;" id="true-img" />   
+                            <span id="true">0</span>
+                            <span class="label" style="margin-left:16px;">სწორი</span>
+                        </div>
+                        <div class="Sequence timer-result" style="margin-right:120px;">
+                            <span class="timer-values" id="timer"></span>
+                            <span class="label"style="margin-left:50px;">გასული დრო</span>
+                        </div>
+                        <div class="Sequence" id="counter">
+                            <div id="ticket-number">
+                                <span id="ticket-number-now">1</span>
+                                <span id="ticket-number-sum"></span>
+                            </div>
+                            <span class="label" style="margin-left:13px;">ბილეთები</span>
+                        </div>
+                        <div class="Sequence" id="invalid">
+                            <img style="width:87px; height:60px; border-radius:5px;" id="false-img" />
+                            <span id="false">0</span>
+                            <span class="label"style="margin-left:15px;">შეცდომა</span>
+                        </div>
+                        <button class="ticketSkip" title="ბილეთის ბოლოსთვის მოტოვება">ბოლოსთვის მოტოვება</button>
+                        <button class="nextTicket" title="შემდეგ ბილეთზე გადასვლა">შემდეგი ბილეთი</button>
+                        <button class="termination" title="ტესტის შეწყვეტა" data-toggle="modal" data-target="#myModal">ტესტის შეწყვეტა</button>
+                        
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="gridSystemModalLabel">დარწმუნებული ხართ, რომ გსურთ გამოცდის შეწყვეტა? </h4>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" id="dismiss" data-dismiss="modal">გაუქმება</button>
+                                        <button type="button" class="btn btn-danger " id="yes" data-dismiss="modal">დიახ</button>
+                                    </div>
+                                </div><!-- /.modal-content -->
+                            </div><!-- /.modal-dialog -->
+                        </div><!-- /.modal -->
+                    </div>
+                </div>
+                <section title="ღილაკით გადასვლის ჩართვა გამორთვა">
+                    <div class="autoNext" style="margin-left:530px; margin-top:-33px;">
+                        <input type="checkbox" value="None" id="autoNext" class="checkNext" name="check" disabled style="display:none;" />
+                        <label for="autoNext-label" class="autoNext-label" style="left:43px;"></label>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-carusel" style="display:none">
+        <div id="myCarousel" class="carousel">
+            <ol class="carousel-indicators"></ol>
+        </div>
+        <a class="w3-btn-floating w3-display-left" style="cursor:pointer; left:2%;top:30%">&#10094;</a>
+        <a class="w3-btn-floating w3-display-right" style="cursor:pointer;right:1%;top:30%">&#10095;</a>
+        <i class="fa fa-times-circle" style="font-size: 24px; position: absolute; top: 4%; right: 2%; transform: translate(0%,-50%);cursor:pointer;"></i>
+    </div>
+
+</body>
+</html>
+<style>
+    .rotateCorrect {
+       transform: translate(-320px,280px) scale(0,0);
+    }
+
+    .rotateInvalid {
+        transform: translate(80px,280px) scale(0,0);
+    }
+    .rotateSkip {
+        transform:translate(320px, 290px) scale(0,0);
+    }
+    .rotateShow {
+        transition: step-start;
+    }
+</style>
+<script src="~/Scripts/MyScript/start.js"></script>
+<script src="~/Scripts/MyScript/enableShutDown.js"></script>
+<script src="~/Scripts/MyScript/examStartViews.js"></script>
+<script src="~/Scripts/MyScript/correctError.js"></script>
+<script src="~/Scripts/MyScript/timer.js"></script>
+<script src="~/Scripts/MyScript/ticketManage.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script>
+    var incorrectAnswers, correctIncorrect, sameTicket, newTicket, questionsQuantity;
+    var Response;
+    var ticket_test;
+    var result;
+    var response;
+    var skip;
+    var checked = false;
+    var chenckedInOff = false;
+    var currentTargetId;
+    var indd = 0, ind2 = 0;
+    var value, classActive = 1;
+    var valueCount;
+    var redError;
+    var item;
+    var click = true;
+    var search = true;
+    $(document).ready(function () {
+
+        $('#start').click(function () {
+            if (search != false) {
+                $('#timer').html("00:00:00");
+                $('#true-img').attr('src', '/image/homePage/green.png');
+                $('#false-img').attr('src', '/image/homePage/red.png');
+                timerCall();
+                startPage();
+            }
+        });
+
+        $('.test-answer').click(function (event) {
+            if ($('.container-carusel').css("display") != "block") {
+                if (checked != true) {
+                    tick(false, 2, event.currentTarget.id);
+                    clickRotate(event.currentTarget.id);
+                    resultShow(event.currentTarget.id);
+                }
+                else {
+                    if (click == true) {
+                        chenckedInOff = true;
+                        nextTicket(event.currentTarget.id);
+                        click = false;
+                    }
+                }
+            }
+            
+            currentTargetId = event.currentTarget.id;
+            //testAnswer();
+        });
+        $('.nextTicket').click(function () {
+            if (checked == true && chenckedInOff == true) {
+                tick(false, 2, event.currentTargetId);
+                clickRotate(currentTargetId);
+                resultShow(currentTargetId, true);
+                chenckedInOff = false;
+                click = true;
+            }
+            //nextTicket();
+        });
+
+        $('.fa-times-circle').click(function () {
+            CloseCorrectErrorWindow();
+        });
+
+        $('.ticketSkip').click(function () {
+            $('.ticket-container').css('opacity', '1');
+            definitionClose();
+            clickRotate(0, 0);
+            tick(true);
+            resultShow();
+            //ticketSkip();
+        });
+        $('.repeat-test').click(function () {
+            $('.ticket-container').css('opacity', '1');
+            tick(null, 0);
+            $('#true-img').attr('src', '/image/homePage/green.png');
+            $('#false-img').attr('src', '/image/homePage/red.png');
+            $('.test-result-ticket').css("display", "none");
+            timerCall();
+            resultShow();
+            // repeatTest();
+        });
+
+        $('.next-new-test').click(function () {
+            if ($('#ticket-number-sum').text() >= '/30') {
+                tick(null, 1);
+                $('#true-img').attr('src', '/image/homePage/green.png');
+                $('#false-img').attr('src', '/image/homePage/red.png');
+                $('.test-result-ticket').css("display", "none");
+                timerCall();
+                resultShow();
+            }
+            //nextNewTest();
+        });
+        $('.ticket-container').hover(OpenHover, closeHover);
+        $('.icon-open').click(function () {
+            definitionOpen();
+        });
+        $('.icon-close').click(function () {
+            definitionClose();
+        });
+        $("body").keydown(function (e) {
+            if ($('.ticket-container').css("opacity") == "1") {
+                if ((e.key == 1) || (e.key == 2) || ($('.answer-4').css("display") == "block" && e.key == 4) || ($('.answer-3').css("display") == "block" && e.key == 3)) {
+                    if (checked != true) {
+                        tick(false, 2, e.key);
+                        clickRotate(e.key);
+                        resultShow(e.key);
+                    }
+                    else {
+                        if (click == true) {
+                            chenckedInOff = true;
+                            nextTicket(e.key);
+                            click = false;
+                        }
+                    }
+                    currentTargetId = e.key;
+                }
+            }
+        });
+
+        SearchTickethover();/// amosarchevi biletebis gazrda dapataraveba
+
+        $('.enable-shutdown-topics').click(function () {
+            if (search == true) {
+                ticketSearch(true);
+                search = false;
+            }
+            else {
+                ticketSearch(false);
+                search = true;
+            }
+        });
+        $('#false,#false-img').click(function () {
+            WrongOpen();
+        });
+        $('#true,#true-img').click(function () {
+            CorrectOpen();
+        });
+
+        document.getElementById("myCarousel").addEventListener("click", function (e) {
+            var target = '#' + e.target.id;
+            var item = target.substring(6, 8);
+
+            if (item != "") {
+                $('li').each(function () {
+                    $('.active').removeClass("active");
+                });
+                $(target).addClass("active");
+                liCarusel(item, value);
+            }
+        });
+
+        $('.w3-display-left').click(function () {
+            displayLeft(value);
+        });
+        $('.w3-display-right').click(function () {
+            displayRight(value);
+        });
+
+        $("body").keydown(function (e) {
+            if ($('.container-carusel').css("display") == "block") {
+                if (e.keyCode == 37) { // left
+                    displayLeft(value);
+                }
+                else if (e.keyCode == 39) { // right
+                    displayRight(value);
+                }
+            }
+        });
+       
+        $('.autoNext').click(function () {
+            if ($('.start-page-wrap').css('display') == 'none') {
+                $('#autoNext').each(function () {
+                    if (checked != true) {
+                        checked = true;
+                        click = true;
+                        $('.autoNext-label').css("left", 3);
+                    }
+                    else {
+                        checked = false;
+                        $('.autoNext-label').css("left", 43);
+                    }
+                });
+            }
+            });
+        $('.autoNext').click(function () {
+            if ($('.' + this.id).prop('checked') != true) {
+                $('.' + this.id).prop('checked', true);
+                $('.' + this.id).css("left", 3);
+                search = true;
+            }
+            else {
+                $('.' + this.id).prop('checked', false);
+                $('.' + this.id).css("left", 43);
+            }
+        });
+        $('.autoNext-right').click(function () {
+            if ($('.' + this.id).prop('checked') != true) {
+                $('.' + this.id).prop('checked', true);
+                $('.' + this.id).css("left", 3);
+            }
+            else {
+                $('.' + this.id).prop('checked', false);
+                $('.' + this.id).css("left", 43);
+            }
+        });
+
+        $(window).scroll(function () {
+            var sc_scrolltop = $(this).scrollTop();
+            if ($(this).scrollTop() > 70) {
+                $('.sc-top').css("margin-top", -(sc_scrolltop));
+                $('.sc-top').css("display", "block");
+            } else {
+                $('.sc-top').css("display", "none");
+            }
+        });
+
+        $('.sc-top').on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({ scrollTop: 0 }, 800);
+        });
+    });
+
+</script>

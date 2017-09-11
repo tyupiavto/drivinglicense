@@ -1,0 +1,101 @@
+﻿body {
+}
+
+left-column {
+    padding-top: 15px;
+}
+
+div.left-column div.timer-result {
+    width: 185px;
+}
+
+div.left-column div.Sequence {
+    width: 87px;
+    float: left;
+    margin-right: 10px;
+}
+
+span.timer-values {
+    display: block;
+    height: 60px;
+    font-size: 40px;
+    line-height: 60px;
+    font-family: Arial,"Helvetica Neue",Helvetica,Sylfaen,sans-serif;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+}
+#true {
+    display: block;
+    height: 59px;
+    color: #00ff21;
+    margin-top: -54px;
+    font-size: 40px;
+    line-height: 60px;
+    font-family: Arial,"Helvetica Neue",Helvetica,Sylfaen,sans-serif;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 6px;
+}
+
+#false {
+    display: block;
+    height: 60px;
+    margin-top: -55px;
+    font-size: 40px;
+    line-height: 60px;
+    font-family: Arial,"Helvetica Neue",Helvetica,Sylfaen,sans-serif;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 6px;
+}
+
+div.left-column div.Sequence #timer {
+    width: 185px;
+    background-color: rgba(0, 0, 0, 0.38);
+    color: #f5f5f5;
+}
+
+div.left-column div.Sequence #true {
+    background-color: #cdffbe;
+}
+
+div.left-column div.Sequence #false {
+    background-color: #ffc7c7;
+    color: red;
+}
+
+div.left-column div.Sequence #ticket-number-now {
+    font-size: 40px;
+}
+
+div.left-column div.Sequence #ticket-number-sum {
+    font-size: 17px;
+}
+
+div.left-column div.Sequence #ticket-number {
+    background-color: rgba(0, 0, 0, 0.38);
+    color: #f5f5f5;
+    height: 60px;
+    font-family: Arial,"Helvetica Neue",Helvetica,Sylfaen,sans-serif;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+#correct {
+    margin-right: 20px;
+}
+
+#invalid {
+    margin-right: 20px;
+}
+
+#timer {
+    margin-right: 120px;
+}
+
+#counter {
+    margin-right: 20px;
+}

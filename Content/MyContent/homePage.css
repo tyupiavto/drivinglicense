@@ -1,0 +1,365 @@
+﻿
+/*/*@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+.keyboard {
+    margin-top: 150px;
+    margin-left: -210px;
+    position: relative;
+    width: 125%;
+    height: 350px;
+    background: #e1dfdf;
+    overflow: hidden;
+}
+
+.keyboard-image {
+    background-image: url("/Image/HomePage/keyboard.jpg");
+    width: 950px;
+    height: 350px;
+    position: absolute;
+    top: 0;
+    right: 48%;
+    display: block;
+    background-position: right center;
+    background-repeat: no-repeat;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.exam-image {
+    background-image: url("/Image/HomePage/exam.jpg");
+    width: 672px;
+    height: 350px;
+    position: absolute;
+    top: 0;
+    right: 48%;
+    display: block;
+    background-position: right center;
+    background-repeat: no-repeat;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.keyboard-title {
+    font-size: 20px;
+    line-height: 2;
+    margin-bottom: 20px;
+    color: black;
+    margin-left: 805px;
+}
+
+.line {
+    display: block;
+    height: 3px;
+    background: #ffd800;
+}
+
+.keyboard-text {
+    width: 590px;
+    height: 200px;
+    font-size: 18px;
+    color: #5e5e5e;
+    line-height: 2;
+    margin-left: 705px;
+    display: block;
+    margin-top: 30px;
+}
+
+.omg-text {
+    width: 700px;
+    position: absolute;
+    top: -115px;
+    left: 55%;
+    margin-left: -80px;
+    display: block;
+    padding-top: 105px;
+}
+
+.yel-line {
+    height: 3px;
+    display: block;
+    background: #fbe26f;
+    margin-bottom: 1px;
+}
+
+.omg-text .omg-desc {
+    font-size: 13px;
+    color: #5e5e5e;
+    line-height: 0.7;
+}
+
+.omg-text .omg-title {
+    font-family: "DJVM",Arial,Sylfaen,sans-serif;
+    /* font-size: 30px; */
+    /*color: #212121;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.imageScrol {
+    margin-left: -210px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.omg .omg-text {
+    width: 870px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: 45px;
+    display: block;
+    padding-top: 52px;
+}
+
+.glyphicon {
+    font-size: 31px;
+    display: block;
+    margin: 0 auto;
+    -moz-transition: margin-bottom,0.2s;
+    -o-transition: margin-bottom,0.2s;
+    -webkit-transition: margin-bottom,0.2s;
+    transition: margin-bottom,0.2s;
+}
+/*zemot asvla*/
+/*.sc-top {
+    position: fixed;
+    width: 56px;
+    display: none;
+    height: 56px;
+    background-color: rgba(0,0,0,.5);
+    /*background-image: url(../../img/icons/sc-top.svg);*/
+    /*background-position: center;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    bottom: 100px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    right: 30px;
+    cursor: pointer;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    transition: text-shadow 1s ease;
+}
+
+a {
+    color: black;
+}
+
+#back-top {
+    bottom: 30px;
+    right: 30px;
+    position: fixed;
+}
+
+    #back-top a {
+        width: 40px;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        height: 39px;
+        font-size: 0;
+        background: url(../images/back-top.png);
+        background-position: center;
+        background-repeat: no-repeat;
+    }*/
+ /*/*/
+ body {
+}
+
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+.points {
+    margin-top: 40px;
+    margin-left: -250px;
+    position: relative;
+    width: 131%;
+    height: 381px;
+    background: #e1dfdf;
+    overflow: hidden;
+}
+
+.points-image {
+    background-image: url("/image/homePage/100.jpg");
+    width: 850px;
+    height: 378px;
+    position: absolute;
+    top: 0;
+    right: 47%;
+    display: block;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.points-text {
+    width: 589px;
+    height: 265px;
+    font-size: 15px;
+    color: #5e5e5e;
+    line-height: 1.8;
+    margin-left: 705px;
+    display: block;
+    margin-top: 10px;
+}
+
+.keyboard {
+    margin-top: 55px;
+    margin-left: -252px;
+    position: relative;
+    width: 131%;
+    height: 350px;
+    background: #e1dfdf;
+    overflow: hidden;
+}
+
+.keyboard-image {
+    background-image: url("/image/homePage/keyboard.jpg");
+    width: 950px;
+    height: 347px;
+    position: absolute;
+    top: 0;
+    right: 48%;
+    display: block;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.keyboard-text {
+    width: 590px;
+    height: 214px;
+    font-size: 15px;
+    color: #5e5e5e;
+    line-height: 2;
+    margin-left: 705px;
+    display: block;
+    margin-top: 30px;
+}
+.keyboard-title {
+    font-size: 20px;
+    line-height: 2;
+    margin-bottom: 20px;
+    color: black;
+    margin-left: 805px;
+}
+.exam-image {
+    background-image: url("/image/homePage/exam.jpg");
+    width: 672px;
+    height: 350px;
+    position: absolute;
+    top: 0;
+    right: 48%;
+    display: block;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.line {
+    display: block;
+    height: 3px;
+    background: #ffd800;
+}
+.omg-text {
+    width: 700px;
+    position: absolute;
+    top: -115px;
+    left: 55%;
+    margin-left: -80px;
+    display: block;
+    padding-top: 105px;
+}
+
+.yel-line {
+    height: 3px;
+    display: block;
+    background: #fbe26f;
+    margin-bottom: 1px;
+}
+
+.omg-text .omg-desc {
+    font-size: 13px;
+    color: #5e5e5e;
+    line-height: 0.7;
+}
+
+.omg-text .omg-title {
+    font-family: "DJVM",Arial,Sylfaen,sans-serif;
+    /* font-size: 30px; */
+    color: #212121;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.imageScrol {
+    margin-left: -210px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.omg .omg-text {
+    width: 870px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: 45px;
+    display: block;
+    padding-top: 52px;
+}
+
+.glyphicon {
+    font-size: 31px;
+    display: block;
+    margin: 0 auto;
+    -moz-transition: margin-bottom,0.2s;
+    -o-transition: margin-bottom,0.2s;
+    -webkit-transition: margin-bottom,0.2s;
+    transition: margin-bottom,0.2s;
+}
+/*zemot asvla*/
+.sc-top {
+    position: fixed;
+    width: 56px;
+    display: none;
+    height: 56px;
+    background-color: rgba(0,0,0,.5);
+    /*background-image: url(../../img/icons/sc-top.svg);*/
+    background-position: center;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    bottom: 100px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    right: 30px;
+    cursor: pointer;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    transition: text-shadow 1s ease;
+}
+
+a {
+    color: black;
+}
+
+#back-top {
+    bottom: 30px;
+    right: 30px;
+    position: fixed;
+}
+
+    #back-top a {
+        width: 40px;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        height: 39px;
+        font-size: 0;
+        background: url(../images/back-top.png);
+        background-position: center;
+        background-repeat: no-repeat;
+    }

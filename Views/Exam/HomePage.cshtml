@@ -1,0 +1,202 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link href="~/Content/MyContent/InformationColumn.css" rel="stylesheet" />
+<link href="~/Content/MyContent/StartPage.css" rel="stylesheet" />
+<link href="~/Content/MyContent/QuestionsAnswers.css" rel="stylesheet" />
+@*<link href="~/Content/MyContent/Home.css" rel="stylesheet" />*@
+<link href="~/Content/MyContent/homePage.css" rel="stylesheet" />
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="row" style="position:relative;">
+        <form action="/Exam/Exam">
+            <div class="start-page start-page-wrap" style="height:105px; margin:0px;">
+                <div class="start-page-object start-button" style="cursor:pointer;">
+                    <div class="start-page-button">
+                        <button type="submit" id="start" style="width:35%; margin-left:0px;margin-top:0px;">გამოცდა</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="row" style="position:relative;">
+      <ul>
+        <li class="points">
+            <span class="points-image"></span>
+            <strong class="keyboard-title">100-ქულიანი სისტემა!</strong>
+            <br />
+            <span class="line"></span>
+            <span class="points-text">
+                ახალი ცვლილებებით, მართვის მოწმობაზე 100-ქულიანი სისტემის მინიჭების წესი შემოდის.
+                თითოეული ადმინისტრაციული სამართალდარღვევა, რომელიც მართვის მოწმობის მფლობელის მიერ საგზაო მოძრაობის უსაფრთხოების სფეროში იქნება ჩადენილი,
+                გამოიწვევს მართვის მოწმობაზე მინიჭებული 100 ქულიდან სამართალდარღვევის ტოლფასი ქულის გამოკლებას.
+                კალენდარული წლის განმავლობაში სამართალდარღვევების გამო, ქულების 0-მდე შემცირება ერთი წლით მართვის უფლების შეჩერებას გამოიწვევს.
+                აღნიშნული ვადის გასვლამდე, პირი მართვის უფლების აღდგენას შეძლებს მართვის უფლების მისაღები გამოცდის ხელახლა ჩაბარების შემთხვევაში,
+                ხოლო თუ მას ერთი კალენდარული წლის განმავლობაში მეორედაც ამოეწურა მინიჭებული ქულები,
+                იგი მიმდინარე კალენდარული წლის დასრულებამდე ვეღარ შეძლებს გამოცდის ჩაბარების გზით მართვის უფლების აღდგენას.
+            </span>
+            <br /><br /><br />
+            <span class="line"></span>
+        </li>
+        <hr />
+        <li class="keyboard">
+            <span class="keyboard-image"></span>
+            <strong class="keyboard-title">პასუხები თაგვის გარეშეც!</strong>
+            <br />
+            <span class="line"></span>
+            <span class="keyboard-text">
+                ათეულობით ბილეთის გავლისას, ბევრისთვის კლავიატურის ღილაკები უფრო კომფორტულია, ვიდრე მაუსით მოძრაობა.
+                თუ მათ შორის ერთ-ერთი ხართ, მაშინ ეს ფუნქცია თქვენთვისაა!
+                თუ არა — აუცილებლად სინჯეთ და მაუსთან დაბრუნება გაგიჭირდებათ.
+            </span>
+            <br /><br /><br />
+            <span class="line"></span>
+        </li>
+      </ul>
+    </div>
+    <hr />
+    <div class="row" style="margin-top:30px; position:relative;">
+        <div class="imageScrol">
+            <img style="margin-top:0px;" src="/image/homePage/1.gif" />
+            <span class="omg-text">
+                <strong class="omg-title" style="padding-top:80px;">
+                    „პარალელური პარკირება“
+                </strong>
+                <span class="yel-line"></span>
+                <span class="omg-desc">
+                    ელემენტის შესრულების დაწყებისას, უკუსვლით მოძრავმა ავტომობილმა არ უნდა გადაკვეთოს შემოსაზღვრული უბნის გარეთ წინ და მარჯვნივ არსებული მონიშვნები.
+                    შემოსაზღვრულ უბანში შესვლისას, პარკირებისას, აგრეთვე შემოსაზღვრული უბნიდან გამოსვლისას ავტომობილმა უნდა იმოძრაოს ისე,
+                    რომ არ გადაკვეთოს ან/და არ შეეჯახოს შემოსაზღვრული უბნის მონიშვნებს. პარალელური პარკირების უბანში გაჩერების შემდეგ ავტომობილი ისე უნდა იდგეს,
+                    რომ მისი გარეგანი კონტურები მთლიანად მოექცეს შემოსაზღვრული უბნის შიდა არეალში.
+                    შემოსაზღვრულ უბანში პარკირების დასრულების შემდგომ მის გამოსვლამდე სავალდებულოა ავტომობილის ხელის მუხრუჭის გამოყენება;
+                </span>
+            </span>
+        </div>
+
+        <div class="imageScrol">
+            <img src="/image/homePage/2.gif" />
+            <span class="omg-text">
+                <strong class="omg-title">
+                    „ზიგზაგი“
+                </strong>
+                <span class="yel-line"></span>
+                <span class="omg-desc">
+                    ელემენტის შესრულება უნდა დაიწყოს შუაში არსებული პირველი მონიშვნის (სადგარის) მარცხენა მხრიდან შემოვლით.
+                    ელემენტის შესრულებისას ავტომობილმა უნდა იმოძრაოს ზიგზაგურად, შუაში არსებულ მონიშვნებს (სადგრებს) შორის.
+                    „ზიგზაგში“ მოძრაობა უნდა განხორციელდეს ელემენტის საზღვრების (მონიშვნების) ფარგლების გადაკვეთის ან/და მათთან შეჯახების გარეშე ელემენტის დაწყებიდან მის დასრულებამდე არ უნდა შეწყდეს (გაჩერდეს) დასახული მიმართულებით ავტომობილის მოძრაობა. ელემენტის შესრულებისას
+                    აკრძალულია უკუსვლით მოძრაობა.
+                </span>
+            </span>
+        </div>
+
+        <div class="imageScrol">
+            <img src="/image/homePage/3.gif" />
+            <span class="omg-text">
+                <strong class="omg-title">
+                    „მოძრაობის მიმართულების შეცვლა“ („შეზღუდული სიგანის შემოსაბრუნებელი უბანი“)
+                </strong>
+                <span class="yel-line"></span>
+                <span class="omg-desc">
+                    ელემენტის შესრულება უნდა დაიწყოს შემოსაზღვრული უბნის წინა მარჯვენა მხრიდან. ელემენტის შესრულებისას, დადგენილი
+                    ტრაექტორიის შესაბამისად, წინ მიმართულებით მოძრაობა უნდა განხორციელდეს სიჩქარის გადაცემათა ერთჯერადი გადართვით. ელემენტის შესრულებისას, დადგენილი ტრაექტორიის შესაბამისად,
+                    უკან მიმართულებით მოძრაობა უნდა განხორციელდეს სიჩქარის გადაცემათა ერთჯერადი გადართვით. ელემენტი უნდა შესარულდეს შეზღუდვის (მონიშვნის) ფარგლების გადაკვეთის ან/და მათთან შეჯახების გარეშე.ელემენტში შემობრუნება უნდა განხორციელდეს ისე, რომ ავტომობილის გარეთა კონტურები მთლიანად მოექცეს შემოსაზღვრული უბნის შიგნით.
+                    ელემენტის შესრულება უნდა დასრულდეს საწყისი მხარის პარალელური მარცხენა მხრიდან შემოსაზღვრული უბნიდან ავტომობილის სრულად გამოსვლით.
+                </span>
+            </span>
+        </div>
+        <div class="imageScrol">
+            <img src="/image/homePage/4.gif" />
+            <span class="omg-text">
+                <strong class="omg-title">
+                    „აღმართიანი უბანი“
+                </strong>
+                <span class="yel-line"></span>
+                <span class="omg-desc">
+                    ელემენტის დასაწყებად, ავტომობილი უნდა გაჩერდეს აღმართზე „სდექ“ ხაზთან (მაგრამ არანაკლებ ხაზამდე ერთი მეტრისა. ელემენტის დაწყებისას, „სდექ“ ხაზიდან დაძვრისას, ავტომობილი არ უნდა დაგორდეს უკან 20 სმ-ზე მეტ მანძილზე..
+                </span>
+            </span>
+
+        </div>
+        <div class="imageScrol">
+            <img src="/image/homePage/5.gif" />
+            <span class="omg-text">
+                <strong class="omg-title">
+                    „რვიანი“
+                </strong>
+                <span class="yel-line"></span>
+                <span class="omg-desc">
+                    „რვიანში“ მოძრაობა უნდა დაიწყოს შემოსაზღვრული უბნის მარჯვენა მხრიდან.
+                    „რვიანში“ მოძრაობა უნდა დასრულდეს შემოსაზღვრული უბნის საწყისი მხარის პარალელური მარცხენა მხრიდან,
+                    შემოსაზღვრული უბნიდან ავტომობილის სრულად გამოსვლით. ელემენტის დაწყებიდან მის დასრულებამდე ავტომობილმა არ უნდა შეწყვიტოს (გაჩერდეს) დასახული მიმართულებით მოძრაობა. ელემენტი უნდა შესრულდეს შეზღუდვის (მონიშვნის) ფარგლების
+                    გადაკვეთის ან/და მათთან შეჯახების გარეშე. ელემენტის შესრულებისას აკრძალულია უკუსვლით მოძრაობა;
+                </span>
+            </span>
+
+        </div>
+        <div class="imageScrol">
+            <img src="/image/homePage/6.gif" />
+            <span class="omg-text">
+                <strong class="omg-title">
+                    „უკუსვლით პარკირება“ (ბოქსი ავტომობილის უკუსვლით დასაყენებლად)
+                </strong>
+                <span class="yel-line"></span>
+                <span class="omg-desc">
+                    უკუსვლით გადაცემის სიჩქარეში გადართვის შემდგომ, მანევრის დაწყებამდე ან მანევრის შესრულებისას, ავტომობილი არ უნდა
+                    დაგორდეს დასახული მიმართულების საპირისპიროდ 30 სმ-ზე მეტ მანძილზე. შემოსაზღვრულ უბანში (ბოქსში) ავტომობილის უკუსვლით შესვლა უნდა განხორციელდეს უკუსვლით გადაცემის ერთჯერადი ჩართვით. ბოქსში გაჩერების შემდეგ ავტომობილი ისე უნდა იდგეს, რომ მისი გარეგანი კონტურები მთლიანად მოექცეს ბოქსის შიდა არეალში. ავტომობილის ბოქსიდან გამოსვლა უნდა განახორციელდეს მხოლოდ ამ დადგენილი მოთხოვნის შესრულების შემდგომ. ბოქსში უკუსვლით შესვლა უნდა განხორციელდეს გვერდით
+                    და უკანა მხარეს არსებული საზღვრების (მონიშვნების) ფარგლების
+                    გადაკვეთის ან/და მათთან შეჯახების გარეშე. ბოქსიდან გამოსვლა უნდა განხორციელდეს გვერდითი და უკანა მხარეს არსებული საზღვრების (მონიშვნების) ფარგლების გადაკვეთის ან/და მათთან
+                    შეჯახების გარეშე;
+
+                </span>
+            </span>
+        </div>
+    </div>
+    <hr />
+    <div class="row" style="position:relative;">
+   <ul>
+        <li class="keyboard">
+            <span class="exam-image"></span>
+            <strong class="keyboard-title">ზუსტად ისე, როგორც გამოცდაზე!</strong>
+            <br />
+            <span class="line"></span>
+            <span class="keyboard-text">
+                ახალი ტესტებით გამოცდის გავლის დროს შეიცვალა ერთი მთავარი პრინციპი — ყოველ ჯერზე,
+                კითხვის პასუხები შემთხვევითი მიმდევრობით გამოდის, რაც მათ დაზეპირებას გამორიცხავს.
+                ნუ მოიტყუებთ თავს და მოემზადეთ ამისთვის — ჩვენთან ტესტირებისას ზუსტად იგივე პრინციპი მოქმედებს.
+            </span>
+            <br /><br /><br />
+            <span class="line"></span>
+        </li>
+        </ul>
+    </div>
+    <div class="sc-top" id="s-top" style="display:none;margin-left:1320px;">
+        <a class="glyphicon glyphicon-upload" style="margin-top:10px;margin-left:11px;" href="#HomePage"></a>
+    </div>
+</body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+    $(window).scroll(function () {
+        var sc_scrolltop = $(this).scrollTop();
+        if ($(this).scrollTop() > 70) {
+            $('.sc-top').css("margin-top", -(sc_scrolltop));
+            $('.sc-top').css("display", "block");
+        } else {
+            $('.sc-top').css("display", "none");
+        }
+    });
+
+    $('.sc-top').on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: 0 }, 800);
+    });
+
+</script>

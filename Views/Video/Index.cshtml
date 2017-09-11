@@ -1,0 +1,313 @@
+﻿
+@{
+    ViewBag.Title = "ვიდეო გაკვეთილები";
+}
+
+<link href="~/Content/MyContent/VideoLess.css" rel="stylesheet" />
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exam</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <nav class="tickets-topics">
+                <h2 class="tickets-cats-title"> აირჩიეთ თემა</h2>
+                <ul class="tickets-topics-list">
+                    <li>
+                        <a id="0">ყველა</a>
+                    </li>
+                    <li>
+                        <a title="მძღოლი, მგზავრი და ქვეითი, ნიშნები, კონვეცია">
+                            <span class="id">
+                                1.
+                            </span>
+                            მძღოლი, მგზავრი და ქვეითი, ნიშნები, კონვეცია
+                        </a>
+                    </li>
+                    <li>
+                        <a title="უწესივრობა და მართვის პირობები">
+                            <span class="id">
+                                2.
+                            </span>
+                            უწესივრობა და მართვის პირობები
+                        </a>
+                    </li>
+                    <li>
+                        <a title="მაფრთხილებელი ნიშნები">
+                            <span class="id">
+                                3.
+                            </span>
+                            მაფრთხილებელი ნიშნები
+                        </a>
+                    </li>
+                    <li>
+                        <a title="პრიორიტეტის ნიშნები">
+                            <span class="id">
+                                4.
+                            </span>
+                            პრიორიტეტის ნიშნები
+                        </a>
+                    </li>
+                    <li>
+                        <a title="ამკრძალავი ნიშნები">
+                            <span class="id">
+                                5.
+                            </span>
+                            ამკრძალავი ნიშნები
+                        </a>
+                    </li>
+                    <li>
+                        <a title="მიმთითებელი ნიშნები">
+                            <span class="id">
+                                6.
+                            </span>
+                            მიმთითებელი ნიშნები
+                        </a>
+                    </li>
+                    <li>
+                        <a title="საინფორმაციო-მაჩვენებელი ნიშნები">
+                            <span class="id">
+                                7.
+                            </span>
+                            საინფორმაციო-მაჩვენებელი ნიშნები
+                        </a>
+                    </li>
+                    <li>
+                        <a title="სერვისის ნიშნები">
+                            <span class="id">
+                                8.
+                            </span>
+                            სერვისის ნიშნები
+                        </a>
+                    </li>
+                    <li>
+                        <a title="დამატებითი ინფორმაციის ნიშნები">
+                            <span class="id">
+                                9.
+                            </span>
+                            დამატებითი ინფორმაციის ნიშნები
+                        </a>
+                    </li>
+                    <li>
+                        <a title="შუქნიშნის სიგნალები">
+                            <span class="id">
+                                10.
+                            </span>
+                            შუქნიშნის სიგნალები
+                        </a>
+                    </li>
+                    <li>
+                        <a title="მარეგულირებლის სიგნალები">
+                            <span class="id">
+                                11.
+                            </span>
+                            მარეგულირებლის სიგნალები
+                        </a>
+                    </li>
+                    <li>
+                        <a title="სპეციალური სიგნალის გამოყენება">
+                            <span class="id">
+                                12.
+                            </span>
+                            სპეციალური სიგნალის გამოყენება
+                        </a>
+                    </li>
+
+                    <li>
+                        <a title="საავარიო შუქური სიგნალიზაცია">
+                            <span class="id">
+                                13.
+                            </span>
+                            საავარიო შუქური სიგნალიზაცია
+                        </a>
+                    </li>
+                    <li>
+                        <a title="სანათი ხელსაწყოები, ხმოვანი სიგნალი">
+                            <span class="id">
+                                14.
+                            </span>
+                            სანათი ხელსაწყოები, ხმოვანი სიგნალი
+                        </a>
+                    </li>
+                    <li>
+                        <a title="მოძრაობა, მანევრირება, სავალი ნაწილი">
+                            <span class="id">
+                                15.
+                            </span>
+                            მოძრაობა, მანევრირება, სავალი ნაწილი
+                        </a>
+                    </li>
+                    <li>
+                        <a title="გასწრება შემხვედრის გვერდის ავლით">
+                            <span class="id">
+                                16.
+                            </span>
+                            გასწრება შემხვედრის გვერდის ავლით
+                        </a>
+                    </li>
+                    <li>
+                        <a title="მოძრაობის სიჩქარე">
+                            <span class="id">
+                                17.
+                            </span>
+                            მოძრაობის სიჩქარე
+                        </a>
+                    </li>
+                    <li>
+                        <a title="სამუხრუჭე მანძილი, დისტანცია">
+                            <span class="id">
+                                18.
+                            </span>
+                            სამუხრუჭე მანძილი, დისტანცია
+                        </a>
+                    </li>
+                    <li>
+                        <a title="გაჩერება დგომა">
+                            <span class="id">
+                                19.
+                            </span>
+                            გაჩერება დგომა
+                        </a>
+                    </li>
+                    <li>
+                        <a title="გზაჯვარედინის გავლა">
+                            <span class="id">
+                                20.
+                            </span>
+                            გზაჯვარედინის გავლა
+                        </a>
+                    </li>
+                    <li>
+                        <a title="რკინიგზის გადასასვლელი">
+                            <span class="id">
+                                21.
+                            </span>
+                            რკინიგზის გადასასვლელი
+                        </a>
+                    </li>
+                    <li>
+                        <a title="მოძრაობა ავტომაგისტრალზე">
+                            <span class="id">
+                                22.
+                            </span>
+                            მოძრაობა ავტომაგისტრალზე
+                        </a>
+                    </li>
+                    <li>
+                        <a title="საცხოვრებელი ზონა, სამარშრუტოს პრიორიტეტი">
+                            <span class="id">
+                                23.
+                            </span>
+                            საცხოვრებელი ზონა, სამარშრუტოს პრიორიტეტი
+                        </a>
+                    </li>
+                    <li>
+                        <a title="ბუქსირება">
+                            <span class="id">
+                                24.
+                            </span>
+                            ბუქსირება
+                        </a>
+                    </li>
+                    <li>
+                        <a title="სასწავლო სვლა">
+                            <span class="id">
+                                25.
+                            </span>
+                            სასწავლო სვლა
+                        </a>
+                    </li>
+                    <li>
+                        <a title="გადაზიდვები, ხალხი, ტვირთი">
+                            <span class="id">
+                                26.
+                            </span>
+                            გადაზიდვები, ხალხი, ტვირთი
+                        </a>
+                    </li>
+                    <li>
+                        <a title="ველოსიპედი, მოპედი და პირუტყვის გადარეკვა">
+                            <span class="id">
+                                27.
+                            </span>
+                            ველოსიპედი, მოპედი და პირუტყვის გადარეკვა
+                        </a>
+                    </li>
+                    <li>
+                        <a title="საგზაო მონიშვნა">
+                            <span class="id">
+                                28.
+                            </span>
+                            საგზაო მონიშვნა
+                        </a>
+                    </li>
+                    <li>
+                        <a title="სამედიცინო დახმარება">
+                            <span class="id">
+                                29.
+                            </span>
+                            სამედიცინო დახმარება
+                        </a>
+                    </li>
+                    <li>
+                        <a title="მოძრაობის უსაფრთხოება">
+                            <span class="id">
+                                30.
+                            </span>
+                            მოძრაობის უსაფრთხოება
+                        </a>
+                    </li>
+                    <li>
+                        <a title="ადმინისტრაციული კანონი">
+                            <span class="id">
+                                31.
+                            </span>
+                            ადმინისტრაციული კანონი
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="text-content">
+                <h1>
+                    B, B1 კატეგორია:
+                    <br />
+                    <span class="midlight"></span>
+                </h1>
+                <video id="myVideo" controls autoplay style="margin-left:100px; width:800px;background-color:dimgrey;">
+                    <source id="mp4_src" src="~/Image/HomePage/trio.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+                @*<video id="video" controls autoplay poster="">
+                        <source id="mp4" src="/Image/HomePage/gamocda.mp4" type="video/mp4">
+                        <p>Your user agent does not support the HTML5 Video element.</p>
+                    </video>*@
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+<script src="~/Scripts/jquery-3.1.1.min.js"></script>
+<script src="~/Scripts/jquery-3.1.1.js"></script>
+<script src="~/Scripts/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('a').click(function () {
+            if ($(this).text()!="ყველა")
+            $('.midlight').html($(this).text());
+        });
+        var vid = document.getElementById("myVideo");
+
+        function myFunction() {
+            isSupp = vid.canPlayType("video/mp4");
+            if (isSupp == "") {
+                vid.src = "movie.ogg";
+            } else {
+                vid.src = "movie.mp4";
+            }
+            vid.load();
+        }
+    });
+</script>
+
